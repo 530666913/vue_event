@@ -1,5 +1,6 @@
-import { Form, FormItem, Input, Button, Link } from 'element-ui'
+import { Form, FormItem, Input, Button, Link, Message } from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
+import '@/assets/global.less'
 
 const elementui = {
   install (Vue) {
@@ -8,6 +9,7 @@ const elementui = {
     Vue.use(Input)
     Vue.use(Button)
     Vue.use(Link)
+    Vue.prototype.$message = Message
   }
 }
 
